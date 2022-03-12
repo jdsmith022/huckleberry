@@ -9,31 +9,32 @@ body {
   padding: 0;
 }
 
+
 /* Add styles here! */
+
+html {
+  font-size: 18px;
+}
 
 h2 {
   margin-block-start: 0px;
 }
 
-main {
-  border-top: 8px solid hsl(0deg, 0%, 30%);
-  background-color: hsl(0deg, 0%, 60%);
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
 }
 
 .max-width-wrapper {
   max-width: 650px;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  margin: auto;
+  margin: 0 auto;
+  padding: 72px 24px;
 }
 
 .intro-chunk {
-  margin: auto;
-  padding-left: 24px;
+  max-width: 320px;
 }
 
 .intro-chunk > p {
-  max-width: 320px;
   margin-top: 24px;
 }
 
@@ -42,7 +43,24 @@ main {
 }
 
 strong {
-  color: hsl(160deg, 100%, 30%)
+  color: hsl(160deg, 100%, 40%)
+}
+
+main {
+  background-color: hsl(0deg, 0%, 60%);
+}
+
+.card {
+  background-color: white;
+  margin: auto;
+  padding: 24px;
+  margin: -24px;
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+.card p {
+  font-size: 1.125rem;
+  line-height: 1.4;
 }
 
 .indented-heading {
@@ -51,14 +69,9 @@ strong {
   padding: 16px 32px;
   border-bottom: 8px solid hsl(45deg, 100%, 40%);
   margin-left: -32px;
+  margin-top: -16px;
 }
 
-.card {
-  background-color: white;
-  margin: auto;
-  padding-top: 8px;
-  padding-bottom: 24px;
-  padding-left: 24px;
-  padding-right: 24px;
-  border-bottom: 8px solid hsl(0deg, 0%, 30%);
+.card p:last-child {
+  margin: 0;
 }
